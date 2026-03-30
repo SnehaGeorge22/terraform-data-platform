@@ -64,9 +64,3 @@ jobs:
         if: github.event_name == 'push'
         run: terraform apply -auto-approve tfplan
         working-directory: environments/${{ env.ENV }}
-
-
-Step 4 → CI/CD Pipeline
-          dev    → auto plan + apply
-          staging → plan + approval + apply
-          prod   → plan + approval + app
